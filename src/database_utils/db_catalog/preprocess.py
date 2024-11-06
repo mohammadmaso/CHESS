@@ -10,6 +10,8 @@ from database_utils.db_catalog.csv_utils import load_tables_description
 
 load_dotenv(override=True)
 
+#TODO Add http proxy client
+
 EMBEDDING_FUNCTION = OpenAIEmbeddings(model="text-embedding-3-large")
 
 def make_db_context_vec_db(db_directory_path: str, **kwargs) -> None:

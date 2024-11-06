@@ -2,7 +2,9 @@ import argparse
 import json
 from datetime import datetime
 from typing import Any, Dict, List
+from langchain_core.runnables.graph import MermaidDrawMethod
 
+from pipeline.draw_graphs import save_image_from_bytes
 from runner.run_manager import RunManager
 
 def parse_arguments() -> argparse.Namespace:
@@ -59,6 +61,7 @@ def main():
     run_manager.initialize_tasks(dataset)
     run_manager.run_tasks()
     run_manager.generate_sql_files()
+    
 
 if __name__ == '__main__':
     main()

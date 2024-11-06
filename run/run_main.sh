@@ -1,6 +1,6 @@
 data_mode='dev' # Options: 'dev', 'train' 
 
-data_path="./data/dev/dev.json" # UPDATE THIS WITH THE PATH TO THE TARGET DATASET
+data_path="./data/dev/sub_sampled_bird_dev_set.json" # UPDATE THIS WITH THE PATH TO THE TARGET DATASET
 
 pipeline_nodes='keyword_extraction+entity_retrieval+context_retrieval+column_filtering+table_selection+column_selection+candidate_generation+revision+evaluation'
 checkpoint_nodes=''
